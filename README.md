@@ -1,21 +1,24 @@
-# otvoreno-racunarstvo-labosi
+# Otvoreno Računarstvo - Labosi
 
-Licenca: CC0 (Creative Commons Zero) ----> dopisi ovo <br>
-Naziv autora: Šime Braica <br>
-Verzija skupa podataka: 1.0. <br>
-Jezik na kojem se nalaze podaci: Hrvatski <br>
-Opis podataka: skup filmova sa najvišim ocjenana (eng. ratings) <br>
-Opis atributa: <br>
-                  naziv - naziv filma <br>
-                  zemlja - država podrijetla filma <br>
-                  prosjecna ocjena - ocjena filma sa TMDB-a <br>
-                  godina - godina prvog prikaza filma <br>
-                  trajanje - trajanje filma u minutama <br>
-                  kratki_opis - opis filma u par kratkih linija <br>
-                  budzet - količina novca uložena u produkciju filma u američkim dolarima <br>
-                  prihod - količina novca zarađenog od filma u američkim dolarima <br>
-                  ime_distributera - ime distributerskog studija koji je objavio film <br>
-                  tvpg_ocjena - preporuka za roditelje (Television Parental Guidline) <br>
-                  zanrovi - koji žanrovima film pripada <br>
-                  redatelj - tko je redatelj filma <br>
-                  glumci - tko se glumi u filmu <br>
+**Licenca:** CC0 (Creative Commons Zero)  
+**Naziv autora:** Šime Braica  
+**Verzija skupa podataka:** 1.0  
+**Jezik na kojem se nalaze podaci:** Hrvatski  
+
+## Opis podataka
+Skup filmova sa najvišim ocjenama (eng. *ratings*).
+
+## Opis atributa
+- **Naziv:** Naziv filma  
+- **Zemlja:** Država podrijetla filma  
+- **Prosječna ocjena:** Ocjena filma sa TMDB-a  
+- **Godina:** Godina prvog prikaza filma  
+- **Trajanje:** Trajanje filma u minutama  
+- **Kratki opis:** Opis filma u par kratkih linija  
+- **Budžet:** Količina novca uložena u produkciju filma u američkim dolarima  
+- **Prihod:** Količina novca zarađenog od filma u američkim dolarima  
+- **Ime distributera:** Ime distributerskog studija koji je objavio film  
+- **TVPG ocjena:** Preporuka za roditelje (Television Parental Guideline)  
+- **Žanrovi:** Koji žanrovima film pripada  
+- **Redatelj:** Tko je redatelj filma  
+- **Glumci:** Tko se glumi u filmu  
