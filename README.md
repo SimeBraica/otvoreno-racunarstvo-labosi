@@ -19,6 +19,6 @@ Skup filmova sa najvišim ocjenama (eng. *ratings*).
 - **Prihod:** Količina novca zarađenog od filma u američkim dolarima  
 - **Ime distributera:** Ime distributerskog studija koji je objavio film  
 - **TVPG ocjena:** Preporuka za roditelje (Television Parental Guideline)  
-- **Žanrovi:** Koji žanrovima film pripada  
+- **Žanrovi:** Kojim žanrovima film pripada  
 - **Redatelj:** Tko je redatelj filma  
-- **Glumci:** Tko se glumi u filmu  
+- **Glumci:** Tko sve glumi u filmu  
