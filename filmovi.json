@@ -1,0 +1,550 @@
+﻿[
+  {
+    "Film_id": 1,
+    "Naziv": "Iskupljenje u Shawshanku",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 87,
+    "Godina": 1994,
+    "Trajanje": 142,
+    "Kratki_opis": "Zatvoren 1940-ih zbog dvostrukog ubojstva svoje \u017Eene i njezinog ljubavnika, ugledni bankar Andy Dufresne zapo\u010Dinje novi \u017Eivot u zatvoru Shawshank, gdje svoje ra\u010Dunovodstvene vje\u0161tine stavlja na posao za amoralnog upravitelja. Tijekom dugog boravka u zatvoru, Dufresneu se dive ostali zatvorenici -- uklju\u010Duju\u0107i starijeg zatvorenika po imenu Red -- zbog njegovog integriteta i neugasivog osje\u0107aja nade.",
+    "Budzet": 25000000,
+    "Prihod": 28341469,
+    "Redatelj_ime": "Frank",
+    "Redatelj_prezime": "Darabont",
+    "Ime_distributera": "Columbia Pictures",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Clancy",
+        "Prezime": "Brown"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "William",
+        "Prezime": "Sandler"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Bob",
+        "Prezime": "Gunton"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Morgan",
+        "Prezime": "Freeman"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Tim",
+        "Prezime": "Robbins"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Kriminalisti\u010Dki"
+      }
+    ]
+  },
+  {
+    "Film_id": 2,
+    "Naziv": "Kum",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 87,
+    "Godina": 1972,
+    "Trajanje": 175,
+    "Kratki_opis": "Obuhva\u0107a godine od 1945. do 1955., kronika izmi\u0161ljene talijansko-ameri\u010Dke zlo\u010Dina\u010Dke obitelji Corleone. Kada obiteljski patrijarh organiziranog kriminala, Vito Corleone, jedva pre\u017Eivi napad na njegov \u017Eivot, njegov najmla\u0111i sin, Michael, usko\u010Di u brigu o potencijalnim ubojicama, pokre\u0107u\u0107i kampanju krvave osvete.",
+    "Budzet": 6000000,
+    "Prihod": 245066411,
+    "Redatelj_ime": "Francis",
+    "Redatelj_prezime": "Coppola",
+    "Ime_distributera": "Paramount Pictures",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Richard",
+        "Prezime": "Castellano"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Robert",
+        "Prezime": "Duvall"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "James",
+        "Prezime": "Caan"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Al",
+        "Prezime": "Pacino"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Marlon",
+        "Prezime": "Brando"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Kriminalisti\u010Dki"
+      }
+    ]
+  },
+  {
+    "Film_id": 3,
+    "Naziv": "Schindlerova lista",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 86,
+    "Godina": 1993,
+    "Trajanje": 195,
+    "Kratki_opis": "Istinita pri\u010Da o tome kako je biznismen Oskar Schindler spasio preko tisu\u0107u \u017Eivota \u017Didova od nacista dok su radili kao robovi u njegovoj tvornici tijekom Drugog svjetskog rata.",
+    "Budzet": 22000000,
+    "Prihod": 321365567,
+    "Redatelj_ime": "Steven",
+    "Redatelj_prezime": "Spielberg",
+    "Ime_distributera": "Universal Pictures",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Jonathan",
+        "Prezime": "Sagall"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Caroline",
+        "Prezime": "Goodall"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Ralph",
+        "Prezime": "Fiennes"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Ben",
+        "Prezime": "Kingsley"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Liam",
+        "Prezime": "Neeson"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Povijesni"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Ratni"
+      }
+    ]
+  },
+  {
+    "Film_id": 4,
+    "Naziv": "Forest Gump",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 85,
+    "Godina": 1994,
+    "Trajanje": 142,
+    "Kratki_opis": "\u010Covjek s niskim kvocijentom inteligencije postigao je velike stvari u svom \u017Eivotu i bio je prisutan tijekom zna\u010Dajnih povijesnih doga\u0111aja - u svakom slu\u010Daju, daleko iznad onoga \u0161to je itko zamislio da mo\u017Ee u\u010Diniti. Ali unato\u010D svemu \u0161to je postigao, njegova jedina prava ljubav mu izmi\u010De.",
+    "Budzet": 55000000,
+    "Prihod": 677387716,
+    "Redatelj_ime": "Robert",
+    "Redatelj_prezime": "Zemeckis",
+    "Ime_distributera": "Paramount Pictures",
+    "TVPG_ocjena": "PG-13",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Mykelti",
+        "Prezime": "Williamson"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Sally",
+        "Prezime": "Field"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Gary",
+        "Prezime": "Sinise"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Robin",
+        "Prezime": "Wright"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Tom",
+        "Prezime": "Hanks"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Komedija"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Romanti\u010Dni"
+      }
+    ]
+  },
+  {
+    "Film_id": 5,
+    "Naziv": "Interstellar",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 84,
+    "Godina": 2014,
+    "Trajanje": 169,
+    "Kratki_opis": "Pustolovine skupine istra\u017Eiva\u010Da koji koriste novootkrivenu crvoto\u010Dinu kako bi nadma\u0161ili ograni\u010Denja ljudskog svemirskog putovanja i osvojili goleme udaljenosti uklju\u010Dene u me\u0111uzvjezdano putovanje.",
+    "Budzet": 165000000,
+    "Prihod": 701729206,
+    "Redatelj_ime": "Christopher",
+    "Redatelj_prezime": "Nolan",
+    "Ime_distributera": "Paramount Pictures",
+    "TVPG_ocjena": "PG-13",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Casey",
+        "Prezime": "Affleck"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Jessica",
+        "Prezime": "Chastain"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Michael",
+        "Prezime": "Caine"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Anne",
+        "Prezime": "Hathaway"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Matthew",
+        "Prezime": "McConaughey"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Avanturisti\u010Dki"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Znanstvena fantastika"
+      }
+    ]
+  },
+  {
+    "Film_id": 6,
+    "Naziv": "Kad jaganjci utihnu",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 83,
+    "Godina": 1991,
+    "Trajanje": 119,
+    "Kratki_opis": "Clarice Starling najbolja je studentica na FBI-evoj akademiji za obuku. Jack Crawford \u017Eeli da Clarice intervjuira dr. Hannibala Lectera, briljantnog psihijatra koji je tako\u0111er i nasilni psihopat, koji slu\u017Ei do\u017Eivotnu kaznu iza re\u0161etaka zbog raznih djela ubojstava i kanibalizma. Crawford vjeruje da bi Lecter mogao imati uvid u slu\u010Daj i da bi Starlingova, kao privla\u010Dna mlada \u017Eena, mogla biti samo mamac da ga izvu\u010De.",
+    "Budzet": 19000000,
+    "Prihod": 272742922,
+    "Redatelj_ime": "Jonathan",
+    "Redatelj_prezime": "Demme",
+    "Ime_distributera": "Orion Pictures",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Anthony",
+        "Prezime": "Heald"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Ted",
+        "Prezime": "Levine"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Scott",
+        "Prezime": "Glenn"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Anthony",
+        "Prezime": "Hopkins"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Jodie",
+        "Prezime": "Foster"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Kriminalisti\u010Dki"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Horor"
+      }
+    ]
+  },
+  {
+    "Film_id": 7,
+    "Naziv": "Gladijator",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 82,
+    "Godina": 2000,
+    "Trajanje": 155,
+    "Kratki_opis": "Godine 180. smrt cara Marka Aurelija baca Rimsko Carstvo u kaos. Maximus je jedan od najsposobnijih i najpouzdanijih generala rimske vojske i klju\u010Dni savjetnik cara. Dok se Marcusov podmukli sin Commodus penje na prijestolje, Maximus \u0107e biti pogubljen. Pobjegne, ali ga zarobe trgovci robljem. Preimenovan u \u0160panjolca i prisiljen postati gladijator, Maximus se mora boriti do smrti s drugim ljudima kako bi zabavio publiku koja pla\u0107a.",
+    "Budzet": 103000000,
+    "Prihod": 465361176,
+    "Redatelj_ime": "William",
+    "Redatelj_prezime": "Nicholson",
+    "Ime_distributera": "DreamWorks Distribution",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Richard",
+        "Prezime": "Harris"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Oliver",
+        "Prezime": "Reed"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Connie",
+        "Prezime": "Nielsen"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Joaquin",
+        "Prezime": "Phoenix"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Russell",
+        "Prezime": "Crowe"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Avanturisti\u010Dki"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Akcijski"
+      }
+    ]
+  },
+  {
+    "Film_id": 8,
+    "Naziv": "Otok Shutter",
+    "Zemlja": "Sjedinjene Ameri\u010Dke Dr\u017Eave",
+    "Prosjecna_Ocjena": 82,
+    "Godina": 2010,
+    "Trajanje": 155,
+    "Kratki_opis": "Vojnik iz Drugog svjetskog rata koji je postao ameri\u010Dki vojnik Mar\u0161al Teddy Daniels istra\u017Euje nestanak pacijenta iz bolnice za lude kriminalce, ali njegovi napori su kompromitirani uznemiruju\u0107im vizijama i tajanstvenim lije\u010Dnikom.",
+    "Budzet": 80000000,
+    "Prihod": 294804195,
+    "Redatelj_ime": "Martin",
+    "Redatelj_prezime": "Scorsese",
+    "Ime_distributera": "Paramount Pictures",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Michelle",
+        "Prezime": "Williams"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Max",
+        "Prezime": "von Sydow"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Mark",
+        "Prezime": "Ruffalo"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Leonardo",
+        "Prezime": "DiCaprio"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Ben",
+        "Prezime": "Kingsley"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Misteri"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Triler"
+      }
+    ]
+  },
+  {
+    "Film_id": 9,
+    "Naziv": "Sedam samuraja",
+    "Zemlja": "Japan",
+    "Prosjecna_Ocjena": 85,
+    "Godina": 1954,
+    "Trajanje": 207,
+    "Kratki_opis": "Samuraj odgovara na zahtjev seljana za za\u0161titu nakon \u0161to ga zadese te\u0161ka vremena. Grad treba za\u0161titu od razbojnika, pa samuraj okupi \u0161estoricu da mu pomognu nau\u010Diti ljude kako se braniti, a seljani opskrbljuju vojnike hranom. \n",
+    "Budzet": 2000000,
+    "Prihod": 2626918,
+    "Redatelj_ime": "Akira",
+    "Redatelj_prezime": "Kurosawa",
+    "Ime_distributera": "Toho",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Minoru",
+        "Prezime": "Chiaki"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Seiji",
+        "Prezime": "Miyaguchi"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Yoshio",
+        "Prezime": "Inaba"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Takashi",
+        "Prezime": "Shimura"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Toshir\u014D",
+        "Prezime": "Mifune"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Akcijski"
+      }
+    ]
+  },
+  {
+    "Film_id": 10,
+    "Naziv": "Podmornica",
+    "Zemlja": "Njema\u010Dka",
+    "Prosjecna_Ocjena": 81,
+    "Godina": 1981,
+    "Trajanje": 210,
+    "Kratki_opis": "Njema\u010Dka podmornica lovi savezni\u010Dke brodove tijekom Drugog svjetskog rata, ali ubrzo postaje lovina. Posada poku\u0161ava pre\u017Eivjeti ispod povr\u0161ine, pritom raste\u017Eu\u0107i i brod i sebe do krajnjih granica.\n",
+    "Budzet": 14000000,
+    "Prihod": 85000000,
+    "Redatelj_ime": "Wolfgang",
+    "Redatelj_prezime": "Petersen",
+    "Ime_distributera": "Neue Constantin Film",
+    "TVPG_ocjena": "R",
+    "Glumci": [
+      {
+        "Glumac_id": 0,
+        "Ime": "Martin",
+        "Prezime": "Semmelrogge"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Hubertus",
+        "Prezime": "Bengsch"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Klaus",
+        "Prezime": "Wennemann"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "Herbert",
+        "Prezime": "Gr\u00F6nemeyer"
+      },
+      {
+        "Glumac_id": 0,
+        "Ime": "J\u00FCrgen",
+        "Prezime": "Prochnow"
+      }
+    ],
+    "Zanrovi": [
+      {
+        "Zanr_id": 0,
+        "Ime": "Drama"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Povijesni"
+      },
+      {
+        "Zanr_id": 0,
+        "Ime": "Ratni"
+      }
+    ]
+  }
+]
