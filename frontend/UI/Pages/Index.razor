@@ -1,0 +1,80 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<PageTitle>Index</PageTitle>
+
+
+<meta name="opis" content="Skup filmova sa najvišim ocjenama sa TMDB-a, uključujući informacije o filmu kao što su naziv, godina, budžet, prihod, redatelj i glumci." />
+<meta name="kljucne-rijeci" content="filmovi, visoke ocjene, TMDB, filmovi sa najvišim ocenama, filmski budžet, filmovi 2024, ocjena, distribucija, redatelj, glumci" />
+<meta name="autor" content="Šime Braica" />
+
+<meta name="film:naziv" content="Naziv filma" />
+<meta name="film:zemlja" content="Država podrijetla filma" />
+<meta name="film:prosjecna-ocjena" content="Ocjena filma sa TMDB-a" />
+<meta name="film:godina" content="Godina prvog prikaza filma" />
+<meta name="film:trajanje" content="Trajanje filma u minutama" />
+<meta name="film:kratki-opis" content="Opis filma u par kratkih linija" />
+<meta name="film:budzet" content="Količina novca uložena u produkciju filma u američkim dolarima" />
+<meta name="film:prihod" content="Količina novca zarađenog od filma u američkim dolarima" />
+<meta name="film:ime-distributera" content="Ime distributerskog studija koji je objavio film" />
+<meta name="film:tvpg-ocjena" content="Preporuka za roditelje (Television Parental Guideline)" />
+<meta name="film:zanrovi" content="Kojim žanrovima film pripada" />
+<meta name="film:redatelj" content="Tko je redatelj filma" />
+<meta name="film:glumci" content="Tko sve glumi u filmu" />
+<h1>Skup filmova sa najvišim ocjenama (eng. ratings).</h1>
+
+
+<ul>
+    <li>
+        <span class="label">Naziv:</span> <span class="value">Naziv filma</span>
+    </li>
+    <li>
+        <span class="label">Zemlja:</span> <span class="value">Država podrijetla filma</span>
+    </li>
+    <li>
+        <span class="label">Prosječna ocjena:</span> <span class="value">Ocjena filma sa TMDB-a</span>
+    </li>
+    <li>
+        <span class="label">Godina:</span> <span class="value">Godina prvog prikaza filma</span>
+    </li>
+    <li>
+        <span class="label">Trajanje:</span> <span class="value">Trajanje filma u minutama</span>
+    </li>
+    <li>
+        <span class="label">Kratki opis:</span> <span class="value">Opis filma u par kratkih linija</span>
+    </li>
+    <li>
+        <span class="label">Budžet:</span> <span class="value">Količina novca uložena u produkciju filma u američkim dolarima</span>
+    </li>
+    <li>
+        <span class="label">Prihod:</span> <span class="value">Količina novca zarađenog od filma u američkim dolarima</span>
+    </li>
+    <li>
+        <span class="label">Ime distributera:</span> <span class="value">Ime distributerskog studija koji je objavio film</span>
+    </li>
+    <li>
+        <span class="label">TVPG ocjena:</span> <span class="value">Preporuka za roditelje (Television Parental Guideline)</span>
+    </li>
+    <li>
+        <span class="label">Žanrovi:</span> <span class="value">Kojim žanrovima film pripada</span>
+    </li>
+    <li>
+        <span class="label">Redatelj:</span> <span class="value">Tko je redatelj filma</span>
+    </li>
+    <li>
+        <span class="label">Glumci:</span> <span class="value">Tko sve glumi u filmu</span>
+    </li>
+</ul>
+
+<Button Color="ButtonColor.Primary" @onclick="() => DownloadCsv()"><Icon Name="IconName.FileTypeCsv" Size="IconSize.x4" /></Button>
+<Button Color="ButtonColor.Primary" @onclick="() => DownloadJson()"><Icon Name="IconName.FileTypeJson" Size="IconSize.x4" /></Button>
+
+@code {
+    private async Task DownloadCsv() {
+        NavigationManager.NavigateTo("Data/filmovi.csv", true);
+    }
+
+    private async Task DownloadJson() {
+        NavigationManager.NavigateTo("Data/filmovi.json", true);
+    }
+}

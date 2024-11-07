@@ -1,0 +1,142 @@
+﻿@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject MovieService MovieService
+@page "/datatable"
+@using System.Text.Json
+
+<script>
+    window.downloadJsonFile = (jsonData, fileName) => {
+        const blob = new Blob([jsonData], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+
+        document.body.appendChild(a);
+        a.click();
+
+        document.body.removeChild(a);
+
+        URL.revokeObjectURL(url);
+    };
+</script>
+
+
+
+<h4>Filter:</h4>
+
+<InputText TValue="string" @bind-Value="@txtInput" Placeholder="Unesi kljucnu rijec za pretrazivanje" />
+
+<Dropdown Color="DropdownColor.Secondary">
+    <DropdownToggleButton>@ddmInput</DropdownToggleButton>
+    <DropdownMenu>
+        <DropdownItem @onclick="() => GetFilteredNaziv(txtInput)">@inpNazivFilma</DropdownItem>
+        <DropdownItem @onclick="() => GetFilteredZanr(txtInput)">@inpZanr</DropdownItem>
+        <DropdownItem @onclick="() => GetFilteredWildcard(txtInput)">@inpWildcard</DropdownItem>
+    </DropdownMenu>
+</Dropdown>
+
+<Button Color="ButtonColor.Primary" @onclick="() => OnInitializedAsync()">Resetiraj</Button>
+
+<Button Color="ButtonColor.Primary" @onclick="() => DownloadCsv()"><Icon Name="IconName.FileTypeCsv" Size="IconSize.x4" /></Button>
+<Button Color="ButtonColor.Primary" @onclick="() => DownloadJson()"><Icon Name="IconName.FileTypeJson" Size="IconSize.x4" /></Button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Film ID</th>
+            <th>Naziv</th>
+            <th>Zemlja</th>
+            <th>Prosječna Ocjena</th>
+            <th>Godina</th>
+            <th>Trajanje (min)</th>
+            <th>Kratki Opis</th>
+            <th>Budžet ($)</th>
+            <th>Prihod ($)</th>
+            <th>Redatelj</th>
+            <th>Distributer</th>
+            <th>TV PG Ocjena</th>
+            <th>Glumci</th>
+            <th>Žanrovi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in movies) {
+            <tr>
+                <td>@movie.FilmId</td>
+                <td>@movie.Naziv</td>
+                <td>@movie.Zemlja</td>
+                <td>@movie.ProsjecnaOcjena</td>
+                <td>@movie.Godina</td>
+                <td>@movie.Trajanje</td>
+                <td>
+                    @if (movie.IsDescriptionExpanded) {
+                        @movie.KratkiOpis
+                        <a href="javascript:void(0);" @onclick="() => ToggleDescription(movie)">Sakrij</a>
+
+                    } else {
+                        @movie.KratkiOpis.Substring(0, 35)
+                        <a href="javascript:void(0);" @onclick="() => ToggleDescription(movie)">...</a>
+                    }
+                </td>
+                <td>@movie.Budzet</td>
+                <td>@movie.Prihod</td>
+                <td>@movie.RedateljIme @movie.RedateljPrezime</td>
+                <td>@movie.ImeDistributera</td>
+                <td>@movie.TVPGocjena</td>
+                <td>@MovieService.GetGlumci(movie.Glumci)</td>
+                <td>@MovieService.GetZanrovi(movie.Zanrovi)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+
+    [Parameter]
+    public string txtInput { get; set; } = "";
+    [Parameter]
+    public string ddmInput { get; set; } = "Odaberi filter";
+    [Parameter]
+    public string inpNazivFilma { get; set; } = "Naziv filma";
+    [Parameter]
+    public string inpZanr { get; set; } = "Zanrovi";
+    [Parameter]
+    public string inpWildcard { get; set; } = "Wildcard";
+
+    private List<MovieDTO> movies = new();
+
+    protected override async Task OnInitializedAsync() {
+        movies = await Http.GetFromJsonAsync<List<MovieDTO>>("https://localhost:7175/api/Movie");
+    }
+    private async Task GetFilteredNaziv(string naziv) {
+        movies = await Http.GetFromJsonAsync<List<MovieDTO>>($"https://localhost:7175/api/Movie/MoviesByNaziv?naziv={naziv}");
+    }
+    private async Task GetFilteredZanr(string zanr) {
+        movies = await Http.GetFromJsonAsync<List<MovieDTO>>($"https://localhost:7175/api/Movie/MoviesByZanr?zanr={zanr}");
+    }
+    private async Task GetFilteredWildcard(string wildcard) {
+        movies = await Http.GetFromJsonAsync<List<MovieDTO>>($"https://localhost:7175/api/Movie/MoviesByWildcard?wildcard={wildcard}");
+    }
+
+    private async Task DownloadJson() {
+        var jsonOptions = new JsonSerializerOptions {
+                WriteIndented = true
+            };
+        var json = JsonSerializer.Serialize(MovieService.FormatJsonFromList(movies), jsonOptions);
+        await JSRuntime.InvokeVoidAsync("downloadJsonFile", json, "filmovi.json");
+    }
+
+
+    private async Task DownloadCsv() {
+        var dataUri = await MovieService.DownloadCsv(movies);
+        NavigationManager.NavigateTo(dataUri, true);
+    }
+
+    private void ToggleDescription(MovieDTO movie) {
+        movie.IsDescriptionExpanded = !movie.IsDescriptionExpanded;
+    }
+
+
+}
