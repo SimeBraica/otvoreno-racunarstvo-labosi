@@ -1,0 +1,2144 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/SimeBraica/otvoreno-racunarstvo-labosi/blob/main/filmovi.json",
+    "title": "JSON shema za filmove",
+    "description": "Skup filmova sa najvišim ocjenama (eng. ratings).",
+    "type": "array",
+    "items": {
+        "title": "Filmovi",
+        "description": "Skup svih filmova",
+        "type": "object",
+        "required": [
+            "Film_id",
+            "Naziv",
+            "Zemlja",
+            "Prosjecna_Ocjena",
+            "Godina",
+            "Trajanje",
+            "Kratki_opis",
+            "Budzet",
+            "Prihod",
+            "Redatelj_ime",
+            "Redatelj_prezime",
+            "Ime_distributera",
+            "TVPG_ocjena",
+            "Glumci",
+            "Zanrovi"
+        ],
+        "properties": {
+            "Film_id": {
+                "title": "The Film_id Schema",
+                "description": "Jedinstveni indentifikator za svaki film",
+                "type": "integer",
+                "examples": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "Naziv": {
+                "title": "The Naziv Schema",
+                "description": "Naziv filma",
+                "type": "string",
+                "examples": [
+                    "Iskupljenje u Shawshanku",
+                    "Kum",
+                    "Schindlerova lista",
+                    "Forest Gump",
+                    "Interstellar",
+                    "Kad jaganjci utihnu",
+                    "Gladijator",
+                    "Otok Shutter",
+                    "Sedam samuraja",
+                    "Podmornica"
+                ]
+            },
+            "Zemlja": {
+                "title": "The Zemlja Schema",
+                "description": "Država podrijetla filma",
+                "type": "string",
+                "examples": [
+                    "Sjedinjene Američke Države",
+                    "Japan",
+                    "Njemačka"
+                ]
+            },
+            "Prosjecna_Ocjena": {
+                "title": "The Prosjecna_Ocjena Schema",
+                "description": "Ocjena filma sa TMDB-a",
+                "type": "integer",
+                "examples": [
+                    87,
+                    86,
+                    85,
+                    84,
+                    83,
+                    82,
+                    81
+                ]
+            },
+            "Godina": {
+                "title": "The Godina Schema",
+                "description": "Godina prvog prikaza filma",
+                "type": "integer",
+                "examples": [
+                    1994,
+                    1972,
+                    1993,
+                    2014,
+                    1991,
+                    2000,
+                    2010,
+                    1954,
+                    1981
+                ]
+            },
+            "Trajanje": {
+                "title": "The Trajanje Schema",
+                "description": "Trajanje filma u minutama",
+                "type": "integer",
+                "examples": [
+                    142,
+                    175,
+                    195,
+                    169,
+                    119,
+                    155,
+                    207,
+                    210
+                ]
+            },
+            "Kratki_opis": {
+                "title": "The Kratki_opis Schema",
+                "description": "Opis filma u par kratkih linija",
+                "type": "string",
+                "examples": [
+                    "Zatvoren 1940-ih zbog dvostrukog ubojstva svoje žene i njezinog ljubavnika, ugledni bankar Andy Dufresne započinje novi život u zatvoru Shawshank, gdje svoje računovodstvene vještine stavlja na posao za amoralnog upravitelja. Tijekom dugog boravka u zatvoru, Dufresneu se dive ostali zatvorenici -- uključujući starijeg zatvorenika po imenu Red -- zbog njegovog integriteta i neugasivog osjećaja nade.",
+                    "Obuhvaća godine od 1945. do 1955., kronika izmišljene talijansko-američke zločinačke obitelji Corleone. Kada obiteljski patrijarh organiziranog kriminala, Vito Corleone, jedva preživi napad na njegov život, njegov najmlađi sin, Michael, uskoči u brigu o potencijalnim ubojicama, pokrećući kampanju krvave osvete.",
+                    "Istinita priča o tome kako je biznismen Oskar Schindler spasio preko tisuću života Židova od nacista dok su radili kao robovi u njegovoj tvornici tijekom Drugog svjetskog rata.",
+                    "Čovjek s niskim kvocijentom inteligencije postigao je velike stvari u svom životu i bio je prisutan tijekom značajnih povijesnih događaja - u svakom slučaju, daleko iznad onoga što je itko zamislio da može učiniti. Ali unatoč svemu što je postigao, njegova jedina prava ljubav mu izmiče.",
+                    "Pustolovine skupine istraživača koji koriste novootkrivenu crvotočinu kako bi nadmašili ograničenja ljudskog svemirskog putovanja i osvojili goleme udaljenosti uključene u međuzvjezdano putovanje.",
+                    "Clarice Starling najbolja je studentica na FBI-evoj akademiji za obuku. Jack Crawford želi da Clarice intervjuira dr. Hannibala Lectera, briljantnog psihijatra koji je također i nasilni psihopat, koji služi doživotnu kaznu iza rešetaka zbog raznih djela ubojstava i kanibalizma. Crawford vjeruje da bi Lecter mogao imati uvid u slučaj i da bi Starlingova, kao privlačna mlada žena, mogla biti samo mamac da ga izvuče.",
+                    "Godine 180. smrt cara Marka Aurelija baca Rimsko Carstvo u kaos. Maximus je jedan od najsposobnijih i najpouzdanijih generala rimske vojske i ključni savjetnik cara. Dok se Marcusov podmukli sin Commodus penje na prijestolje, Maximus će biti pogubljen. Pobjegne, ali ga zarobe trgovci robljem. Preimenovan u Španjolca i prisiljen postati gladijator, Maximus se mora boriti do smrti s drugim ljudima kako bi zabavio publiku koja plaća.",
+                    "Vojnik iz Drugog svjetskog rata koji je postao američki vojnik Maršal Teddy Daniels istražuje nestanak pacijenta iz bolnice za lude kriminalce, ali njegovi napori su kompromitirani uznemirujućim vizijama i tajanstvenim liječnikom.",
+                    "Samuraj odgovara na zahtjev seljana za zaštitu nakon što ga zadese teška vremena. Grad treba zaštitu od razbojnika, pa samuraj okupi šestoricu da mu pomognu naučiti ljude kako se braniti, a seljani opskrbljuju vojnike hranom. \n",
+                    "Njemačka podmornica lovi savezničke brodove tijekom Drugog svjetskog rata, ali ubrzo postaje lovina. Posada pokušava preživjeti ispod površine, pritom rastežući i brod i sebe do krajnjih granica.\n"
+                ]
+            },
+            "Budzet": {
+                "title": "The Budzet Schema",
+                "description": "Količina novca uložena u produkciju filma u američkim dolarima",
+                "type": "integer",
+                "examples": [
+                    25000000,
+                    6000000,
+                    22000000,
+                    55000000,
+                    165000000,
+                    19000000,
+                    103000000,
+                    80000000,
+                    2000000,
+                    14000000
+                ]
+            },
+            "Prihod": {
+                "title": "The Prihod Schema",
+                "description": "Količina novca zarađenog od filma u američkim dolarima",
+                "type": "integer",
+                "examples": [
+                    28341469,
+                    245066411,
+                    321365567,
+                    677387716,
+                    701729206,
+                    272742922,
+                    465361176,
+                    294804195,
+                    2626918,
+                    85000000
+                ]
+            },
+            "Redatelj_ime": {
+                "title": "The Redatelj_ime Schema",
+                "description": "Tko je redatelj filma",
+                "type": "string",
+                "examples": [
+                    "Frank",
+                    "Francis",
+                    "Steven",
+                    "Robert",
+                    "Christopher",
+                    "Jonathan",
+                    "William",
+                    "Martin",
+                    "Akira",
+                    "Wolfgang"
+                ]
+            },
+            "Redatelj_prezime": {
+                "title": "The Redatelj_prezime Schema",
+                "description": "Tko je redatelj filma",
+                "type": "string",
+                "examples": [
+                    "Darabont",
+                    "Coppola",
+                    "Spielberg",
+                    "Zemeckis",
+                    "Nolan",
+                    "Demme",
+                    "Nicholson",
+                    "Scorsese",
+                    "Kurosawa",
+                    "Petersen"
+                ]
+            },
+            "Ime_distributera": {
+                "title": "The Ime_distributera Schema",
+                "description": "Ime distributerskog studija koji je objavio film",
+                "type": "string",
+                "examples": [
+                    "Columbia Pictures",
+                    "Paramount Pictures",
+                    "Universal Pictures",
+                    "Orion Pictures",
+                    "DreamWorks Distribution",
+                    "Toho",
+                    "Neue Constantin Film"
+                ]
+            },
+            "TVPG_ocjena": {
+                "title": "The TVPG_ocjena Schema",
+                "description": "Preporuka za roditelje (Television Parental Guideline)",
+                "type": "string",
+                "examples": [
+                    "R",
+                    "PG-13"
+                ]
+            },
+            "Glumci": {
+                "title": "The Glumci Schema",
+                "description": "Tko sve glumi u filmu",
+                "type": "array",
+                "items": {
+                    "title": "A Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "object",
+                    "required": [
+                        "Glumac_id",
+                        "Ime",
+                        "Prezime"
+                    ],
+                    "properties": {
+                        "Glumac_id": {
+                            "title": "The Glumac_id Schema",
+                            "description": "Jedinstveni indenfitikator za svakog glumca",
+                            "type": "integer",
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "Ime": {
+                            "title": "The Ime Schema",
+                            "description": "Ime glumca",
+                            "type": "string",
+                            "examples": [
+                                "Clancy",
+                                "William",
+                                "Bob",
+                                "Morgan",
+                                "Tim",
+                                "Richard",
+                                "Robert",
+                                "James",
+                                "Al",
+                                "Marlon",
+                                "Jonathan",
+                                "Caroline",
+                                "Ralph",
+                                "Ben",
+                                "Liam",
+                                "Mykelti",
+                                "Sally",
+                                "Gary",
+                                "Robin",
+                                "Tom",
+                                "Casey",
+                                "Jessica",
+                                "Michael",
+                                "Anne",
+                                "Matthew",
+                                "Anthony",
+                                "Ted",
+                                "Scott",
+                                "Jodie",
+                                "Oliver",
+                                "Connie",
+                                "Joaquin",
+                                "Russell",
+                                "Michelle",
+                                "Max",
+                                "Mark",
+                                "Leonardo",
+                                "Minoru",
+                                "Seiji",
+                                "Yoshio",
+                                "Takashi",
+                                "Toshirō",
+                                "Martin",
+                                "Hubertus",
+                                "Klaus",
+                                "Herbert",
+                                "Jürgen"
+                            ]
+                        },
+                        "Prezime": {
+                            "title": "The Prezime Schema",
+                            "description": "Prezime glumca",
+                            "type": "string",
+                            "examples": [
+                                "Brown",
+                                "Sandler",
+                                "Gunton",
+                                "Freeman",
+                                "Robbins",
+                                "Castellano",
+                                "Duvall",
+                                "Caan",
+                                "Pacino",
+                                "Brando",
+                                "Sagall",
+                                "Goodall",
+                                "Fiennes",
+                                "Kingsley",
+                                "Neeson",
+                                "Williamson",
+                                "Field",
+                                "Sinise",
+                                "Wright",
+                                "Hanks",
+                                "Affleck",
+                                "Chastain",
+                                "Caine",
+                                "Hathaway",
+                                "McConaughey",
+                                "Heald",
+                                "Levine",
+                                "Glenn",
+                                "Hopkins",
+                                "Foster",
+                                "Harris",
+                                "Reed",
+                                "Nielsen",
+                                "Phoenix",
+                                "Crowe",
+                                "Williams",
+                                "von Sydow",
+                                "Ruffalo",
+                                "DiCaprio",
+                                "Chiaki",
+                                "Miyaguchi",
+                                "Inaba",
+                                "Shimura",
+                                "Mifune",
+                                "Semmelrogge",
+                                "Bengsch",
+                                "Wennemann",
+                                "Grönemeyer",
+                                "Prochnow"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "Glumac_id": 0,
+                        "Ime": "Clancy",
+                        "Prezime": "Brown"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "William",
+                        "Prezime": "Sandler"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Bob",
+                        "Prezime": "Gunton"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Morgan",
+                        "Prezime": "Freeman"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Tim",
+                        "Prezime": "Robbins"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Richard",
+                        "Prezime": "Castellano"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Robert",
+                        "Prezime": "Duvall"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "James",
+                        "Prezime": "Caan"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Al",
+                        "Prezime": "Pacino"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Marlon",
+                        "Prezime": "Brando"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jonathan",
+                        "Prezime": "Sagall"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Caroline",
+                        "Prezime": "Goodall"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ralph",
+                        "Prezime": "Fiennes"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ben",
+                        "Prezime": "Kingsley"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Liam",
+                        "Prezime": "Neeson"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Mykelti",
+                        "Prezime": "Williamson"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Sally",
+                        "Prezime": "Field"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Gary",
+                        "Prezime": "Sinise"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Robin",
+                        "Prezime": "Wright"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Tom",
+                        "Prezime": "Hanks"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Casey",
+                        "Prezime": "Affleck"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jessica",
+                        "Prezime": "Chastain"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Michael",
+                        "Prezime": "Caine"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Anne",
+                        "Prezime": "Hathaway"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Matthew",
+                        "Prezime": "McConaughey"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Anthony",
+                        "Prezime": "Heald"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ted",
+                        "Prezime": "Levine"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Scott",
+                        "Prezime": "Glenn"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Anthony",
+                        "Prezime": "Hopkins"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jodie",
+                        "Prezime": "Foster"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Richard",
+                        "Prezime": "Harris"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Oliver",
+                        "Prezime": "Reed"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Connie",
+                        "Prezime": "Nielsen"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Joaquin",
+                        "Prezime": "Phoenix"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Russell",
+                        "Prezime": "Crowe"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Michelle",
+                        "Prezime": "Williams"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Max",
+                        "Prezime": "von Sydow"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Mark",
+                        "Prezime": "Ruffalo"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Leonardo",
+                        "Prezime": "DiCaprio"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ben",
+                        "Prezime": "Kingsley"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Minoru",
+                        "Prezime": "Chiaki"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Seiji",
+                        "Prezime": "Miyaguchi"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Yoshio",
+                        "Prezime": "Inaba"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Takashi",
+                        "Prezime": "Shimura"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Toshirō",
+                        "Prezime": "Mifune"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Martin",
+                        "Prezime": "Semmelrogge"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Hubertus",
+                        "Prezime": "Bengsch"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Klaus",
+                        "Prezime": "Wennemann"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Herbert",
+                        "Prezime": "Grönemeyer"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jürgen",
+                        "Prezime": "Prochnow"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Clancy",
+                        "Prezime": "Brown"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "William",
+                        "Prezime": "Sandler"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Bob",
+                        "Prezime": "Gunton"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Morgan",
+                        "Prezime": "Freeman"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Tim",
+                        "Prezime": "Robbins"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Richard",
+                        "Prezime": "Castellano"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Robert",
+                        "Prezime": "Duvall"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "James",
+                        "Prezime": "Caan"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Al",
+                        "Prezime": "Pacino"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Marlon",
+                        "Prezime": "Brando"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Jonathan",
+                        "Prezime": "Sagall"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Caroline",
+                        "Prezime": "Goodall"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ralph",
+                        "Prezime": "Fiennes"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ben",
+                        "Prezime": "Kingsley"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Liam",
+                        "Prezime": "Neeson"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Mykelti",
+                        "Prezime": "Williamson"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Sally",
+                        "Prezime": "Field"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Gary",
+                        "Prezime": "Sinise"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Robin",
+                        "Prezime": "Wright"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Tom",
+                        "Prezime": "Hanks"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Casey",
+                        "Prezime": "Affleck"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jessica",
+                        "Prezime": "Chastain"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Michael",
+                        "Prezime": "Caine"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Anne",
+                        "Prezime": "Hathaway"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Matthew",
+                        "Prezime": "McConaughey"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Anthony",
+                        "Prezime": "Heald"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ted",
+                        "Prezime": "Levine"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Scott",
+                        "Prezime": "Glenn"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Anthony",
+                        "Prezime": "Hopkins"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jodie",
+                        "Prezime": "Foster"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Richard",
+                        "Prezime": "Harris"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Oliver",
+                        "Prezime": "Reed"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Connie",
+                        "Prezime": "Nielsen"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Joaquin",
+                        "Prezime": "Phoenix"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Russell",
+                        "Prezime": "Crowe"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Michelle",
+                        "Prezime": "Williams"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Max",
+                        "Prezime": "von Sydow"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Mark",
+                        "Prezime": "Ruffalo"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Leonardo",
+                        "Prezime": "DiCaprio"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Ben",
+                        "Prezime": "Kingsley"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Minoru",
+                        "Prezime": "Chiaki"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Seiji",
+                        "Prezime": "Miyaguchi"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Yoshio",
+                        "Prezime": "Inaba"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Takashi",
+                        "Prezime": "Shimura"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Toshirō",
+                        "Prezime": "Mifune"
+                    }],
+                    [{
+                        "Glumac_id": 0,
+                        "Ime": "Martin",
+                        "Prezime": "Semmelrogge"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Hubertus",
+                        "Prezime": "Bengsch"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Klaus",
+                        "Prezime": "Wennemann"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Herbert",
+                        "Prezime": "Grönemeyer"
+                    },
+                    {
+                        "Glumac_id": 0,
+                        "Ime": "Jürgen",
+                        "Prezime": "Prochnow"
+                    }]
+                ]
+            },
+            "Zanrovi": {
+                "title": "The Zanrovi Schema",
+                "description": "Kojim žanrovima film pripada",
+                "type": "array",
+                "items": {
+                    "title": "A Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "type": "object",
+                    "required": [
+                        "Zanr_id",
+                        "Ime"
+                    ],
+                    "properties": {
+                        "Zanr_id": {
+                            "title": "The Zanr_id Schema",
+                            "description": "Jedinstveni indentifikator za svaki zanr",
+                            "type": "integer",
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "Ime": {
+                            "title": "The Ime Schema",
+                            "description": "Ime zanra",
+                            "type": "string",
+                            "examples": [
+                                "Drama",
+                                "Kriminalistički",
+                                "Povijesni",
+                                "Ratni",
+                                "Komedija",
+                                "Romantični",
+                                "Avanturistički",
+                                "Znanstvena fantastika",
+                                "Horor",
+                                "Akcijski",
+                                "Misteri",
+                                "Triler"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Kriminalistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Kriminalistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Povijesni"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Ratni"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Komedija"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Romantični"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Avanturistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Znanstvena fantastika"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Kriminalistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Horor"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Avanturistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Akcijski"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Misteri"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Triler"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Akcijski"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Povijesni"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Ratni"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Kriminalistički"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Kriminalistički"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Povijesni"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Ratni"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Komedija"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Romantični"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Avanturistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Znanstvena fantastika"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Kriminalistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Horor"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Avanturistički"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Akcijski"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Misteri"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Triler"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Akcijski"
+                    }],
+                    [{
+                        "Zanr_id": 0,
+                        "Ime": "Drama"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Povijesni"
+                    },
+                    {
+                        "Zanr_id": 0,
+                        "Ime": "Ratni"
+                    }]
+                ]
+            }
+        },
+        "examples": [{
+            "Film_id": 1,
+            "Naziv": "Iskupljenje u Shawshanku",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 87,
+            "Godina": 1994,
+            "Trajanje": 142,
+            "Kratki_opis": "Zatvoren 1940-ih zbog dvostrukog ubojstva svoje žene i njezinog ljubavnika, ugledni bankar Andy Dufresne započinje novi život u zatvoru Shawshank, gdje svoje računovodstvene vještine stavlja na posao za amoralnog upravitelja. Tijekom dugog boravka u zatvoru, Dufresneu se dive ostali zatvorenici -- uključujući starijeg zatvorenika po imenu Red -- zbog njegovog integriteta i neugasivog osjećaja nade.",
+            "Budzet": 25000000,
+            "Prihod": 28341469,
+            "Redatelj_ime": "Frank",
+            "Redatelj_prezime": "Darabont",
+            "Ime_distributera": "Columbia Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Clancy",
+                "Prezime": "Brown"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "William",
+                "Prezime": "Sandler"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Bob",
+                "Prezime": "Gunton"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Morgan",
+                "Prezime": "Freeman"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Tim",
+                "Prezime": "Robbins"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Kriminalistički"
+            }]
+        },
+        {
+            "Film_id": 2,
+            "Naziv": "Kum",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 87,
+            "Godina": 1972,
+            "Trajanje": 175,
+            "Kratki_opis": "Obuhvaća godine od 1945. do 1955., kronika izmišljene talijansko-američke zločinačke obitelji Corleone. Kada obiteljski patrijarh organiziranog kriminala, Vito Corleone, jedva preživi napad na njegov život, njegov najmlađi sin, Michael, uskoči u brigu o potencijalnim ubojicama, pokrećući kampanju krvave osvete.",
+            "Budzet": 6000000,
+            "Prihod": 245066411,
+            "Redatelj_ime": "Francis",
+            "Redatelj_prezime": "Coppola",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Richard",
+                "Prezime": "Castellano"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Robert",
+                "Prezime": "Duvall"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "James",
+                "Prezime": "Caan"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Al",
+                "Prezime": "Pacino"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Marlon",
+                "Prezime": "Brando"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Kriminalistički"
+            }]
+        },
+        {
+            "Film_id": 3,
+            "Naziv": "Schindlerova lista",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 86,
+            "Godina": 1993,
+            "Trajanje": 195,
+            "Kratki_opis": "Istinita priča o tome kako je biznismen Oskar Schindler spasio preko tisuću života Židova od nacista dok su radili kao robovi u njegovoj tvornici tijekom Drugog svjetskog rata.",
+            "Budzet": 22000000,
+            "Prihod": 321365567,
+            "Redatelj_ime": "Steven",
+            "Redatelj_prezime": "Spielberg",
+            "Ime_distributera": "Universal Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Jonathan",
+                "Prezime": "Sagall"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Caroline",
+                "Prezime": "Goodall"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ralph",
+                "Prezime": "Fiennes"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ben",
+                "Prezime": "Kingsley"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Liam",
+                "Prezime": "Neeson"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Povijesni"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Ratni"
+            }]
+        },
+        {
+            "Film_id": 4,
+            "Naziv": "Forest Gump",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 85,
+            "Godina": 1994,
+            "Trajanje": 142,
+            "Kratki_opis": "Čovjek s niskim kvocijentom inteligencije postigao je velike stvari u svom životu i bio je prisutan tijekom značajnih povijesnih događaja - u svakom slučaju, daleko iznad onoga što je itko zamislio da može učiniti. Ali unatoč svemu što je postigao, njegova jedina prava ljubav mu izmiče.",
+            "Budzet": 55000000,
+            "Prihod": 677387716,
+            "Redatelj_ime": "Robert",
+            "Redatelj_prezime": "Zemeckis",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "PG-13",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Mykelti",
+                "Prezime": "Williamson"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Sally",
+                "Prezime": "Field"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Gary",
+                "Prezime": "Sinise"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Robin",
+                "Prezime": "Wright"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Tom",
+                "Prezime": "Hanks"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Komedija"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Romantični"
+            }]
+        },
+        {
+            "Film_id": 5,
+            "Naziv": "Interstellar",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 84,
+            "Godina": 2014,
+            "Trajanje": 169,
+            "Kratki_opis": "Pustolovine skupine istraživača koji koriste novootkrivenu crvotočinu kako bi nadmašili ograničenja ljudskog svemirskog putovanja i osvojili goleme udaljenosti uključene u međuzvjezdano putovanje.",
+            "Budzet": 165000000,
+            "Prihod": 701729206,
+            "Redatelj_ime": "Christopher",
+            "Redatelj_prezime": "Nolan",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "PG-13",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Casey",
+                "Prezime": "Affleck"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Jessica",
+                "Prezime": "Chastain"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Michael",
+                "Prezime": "Caine"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Anne",
+                "Prezime": "Hathaway"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Matthew",
+                "Prezime": "McConaughey"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Avanturistički"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Znanstvena fantastika"
+            }]
+        },
+        {
+            "Film_id": 6,
+            "Naziv": "Kad jaganjci utihnu",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 83,
+            "Godina": 1991,
+            "Trajanje": 119,
+            "Kratki_opis": "Clarice Starling najbolja je studentica na FBI-evoj akademiji za obuku. Jack Crawford želi da Clarice intervjuira dr. Hannibala Lectera, briljantnog psihijatra koji je također i nasilni psihopat, koji služi doživotnu kaznu iza rešetaka zbog raznih djela ubojstava i kanibalizma. Crawford vjeruje da bi Lecter mogao imati uvid u slučaj i da bi Starlingova, kao privlačna mlada žena, mogla biti samo mamac da ga izvuče.",
+            "Budzet": 19000000,
+            "Prihod": 272742922,
+            "Redatelj_ime": "Jonathan",
+            "Redatelj_prezime": "Demme",
+            "Ime_distributera": "Orion Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Anthony",
+                "Prezime": "Heald"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ted",
+                "Prezime": "Levine"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Scott",
+                "Prezime": "Glenn"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Anthony",
+                "Prezime": "Hopkins"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Jodie",
+                "Prezime": "Foster"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Kriminalistički"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Horor"
+            }]
+        },
+        {
+            "Film_id": 7,
+            "Naziv": "Gladijator",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 82,
+            "Godina": 2000,
+            "Trajanje": 155,
+            "Kratki_opis": "Godine 180. smrt cara Marka Aurelija baca Rimsko Carstvo u kaos. Maximus je jedan od najsposobnijih i najpouzdanijih generala rimske vojske i ključni savjetnik cara. Dok se Marcusov podmukli sin Commodus penje na prijestolje, Maximus će biti pogubljen. Pobjegne, ali ga zarobe trgovci robljem. Preimenovan u Španjolca i prisiljen postati gladijator, Maximus se mora boriti do smrti s drugim ljudima kako bi zabavio publiku koja plaća.",
+            "Budzet": 103000000,
+            "Prihod": 465361176,
+            "Redatelj_ime": "William",
+            "Redatelj_prezime": "Nicholson",
+            "Ime_distributera": "DreamWorks Distribution",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Richard",
+                "Prezime": "Harris"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Oliver",
+                "Prezime": "Reed"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Connie",
+                "Prezime": "Nielsen"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Joaquin",
+                "Prezime": "Phoenix"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Russell",
+                "Prezime": "Crowe"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Avanturistički"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Akcijski"
+            }]
+        },
+        {
+            "Film_id": 8,
+            "Naziv": "Otok Shutter",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 82,
+            "Godina": 2010,
+            "Trajanje": 155,
+            "Kratki_opis": "Vojnik iz Drugog svjetskog rata koji je postao američki vojnik Maršal Teddy Daniels istražuje nestanak pacijenta iz bolnice za lude kriminalce, ali njegovi napori su kompromitirani uznemirujućim vizijama i tajanstvenim liječnikom.",
+            "Budzet": 80000000,
+            "Prihod": 294804195,
+            "Redatelj_ime": "Martin",
+            "Redatelj_prezime": "Scorsese",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Michelle",
+                "Prezime": "Williams"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Max",
+                "Prezime": "von Sydow"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Mark",
+                "Prezime": "Ruffalo"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Leonardo",
+                "Prezime": "DiCaprio"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ben",
+                "Prezime": "Kingsley"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Misteri"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Triler"
+            }]
+        },
+        {
+            "Film_id": 9,
+            "Naziv": "Sedam samuraja",
+            "Zemlja": "Japan",
+            "Prosjecna_Ocjena": 85,
+            "Godina": 1954,
+            "Trajanje": 207,
+            "Kratki_opis": "Samuraj odgovara na zahtjev seljana za zaštitu nakon što ga zadese teška vremena. Grad treba zaštitu od razbojnika, pa samuraj okupi šestoricu da mu pomognu naučiti ljude kako se braniti, a seljani opskrbljuju vojnike hranom. \n",
+            "Budzet": 2000000,
+            "Prihod": 2626918,
+            "Redatelj_ime": "Akira",
+            "Redatelj_prezime": "Kurosawa",
+            "Ime_distributera": "Toho",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Minoru",
+                "Prezime": "Chiaki"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Seiji",
+                "Prezime": "Miyaguchi"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Yoshio",
+                "Prezime": "Inaba"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Takashi",
+                "Prezime": "Shimura"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Toshirō",
+                "Prezime": "Mifune"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Akcijski"
+            }]
+        },
+        {
+            "Film_id": 10,
+            "Naziv": "Podmornica",
+            "Zemlja": "Njemačka",
+            "Prosjecna_Ocjena": 81,
+            "Godina": 1981,
+            "Trajanje": 210,
+            "Kratki_opis": "Njemačka podmornica lovi savezničke brodove tijekom Drugog svjetskog rata, ali ubrzo postaje lovina. Posada pokušava preživjeti ispod površine, pritom rastežući i brod i sebe do krajnjih granica.\n",
+            "Budzet": 14000000,
+            "Prihod": 85000000,
+            "Redatelj_ime": "Wolfgang",
+            "Redatelj_prezime": "Petersen",
+            "Ime_distributera": "Neue Constantin Film",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Martin",
+                "Prezime": "Semmelrogge"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Hubertus",
+                "Prezime": "Bengsch"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Klaus",
+                "Prezime": "Wennemann"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Herbert",
+                "Prezime": "Grönemeyer"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Jürgen",
+                "Prezime": "Prochnow"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Povijesni"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Ratni"
+            }]
+        }]
+    },
+    "examples": [
+        [{
+            "Film_id": 1,
+            "Naziv": "Iskupljenje u Shawshanku",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 87,
+            "Godina": 1994,
+            "Trajanje": 142,
+            "Kratki_opis": "Zatvoren 1940-ih zbog dvostrukog ubojstva svoje žene i njezinog ljubavnika, ugledni bankar Andy Dufresne započinje novi život u zatvoru Shawshank, gdje svoje računovodstvene vještine stavlja na posao za amoralnog upravitelja. Tijekom dugog boravka u zatvoru, Dufresneu se dive ostali zatvorenici -- uključujući starijeg zatvorenika po imenu Red -- zbog njegovog integriteta i neugasivog osjećaja nade.",
+            "Budzet": 25000000,
+            "Prihod": 28341469,
+            "Redatelj_ime": "Frank",
+            "Redatelj_prezime": "Darabont",
+            "Ime_distributera": "Columbia Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Clancy",
+                "Prezime": "Brown"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "William",
+                "Prezime": "Sandler"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Bob",
+                "Prezime": "Gunton"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Morgan",
+                "Prezime": "Freeman"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Tim",
+                "Prezime": "Robbins"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Kriminalistički"
+            }]
+        },
+        {
+            "Film_id": 2,
+            "Naziv": "Kum",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 87,
+            "Godina": 1972,
+            "Trajanje": 175,
+            "Kratki_opis": "Obuhvaća godine od 1945. do 1955., kronika izmišljene talijansko-američke zločinačke obitelji Corleone. Kada obiteljski patrijarh organiziranog kriminala, Vito Corleone, jedva preživi napad na njegov život, njegov najmlađi sin, Michael, uskoči u brigu o potencijalnim ubojicama, pokrećući kampanju krvave osvete.",
+            "Budzet": 6000000,
+            "Prihod": 245066411,
+            "Redatelj_ime": "Francis",
+            "Redatelj_prezime": "Coppola",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Richard",
+                "Prezime": "Castellano"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Robert",
+                "Prezime": "Duvall"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "James",
+                "Prezime": "Caan"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Al",
+                "Prezime": "Pacino"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Marlon",
+                "Prezime": "Brando"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Kriminalistički"
+            }]
+        },
+        {
+            "Film_id": 3,
+            "Naziv": "Schindlerova lista",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 86,
+            "Godina": 1993,
+            "Trajanje": 195,
+            "Kratki_opis": "Istinita priča o tome kako je biznismen Oskar Schindler spasio preko tisuću života Židova od nacista dok su radili kao robovi u njegovoj tvornici tijekom Drugog svjetskog rata.",
+            "Budzet": 22000000,
+            "Prihod": 321365567,
+            "Redatelj_ime": "Steven",
+            "Redatelj_prezime": "Spielberg",
+            "Ime_distributera": "Universal Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Jonathan",
+                "Prezime": "Sagall"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Caroline",
+                "Prezime": "Goodall"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ralph",
+                "Prezime": "Fiennes"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ben",
+                "Prezime": "Kingsley"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Liam",
+                "Prezime": "Neeson"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Povijesni"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Ratni"
+            }]
+        },
+        {
+            "Film_id": 4,
+            "Naziv": "Forest Gump",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 85,
+            "Godina": 1994,
+            "Trajanje": 142,
+            "Kratki_opis": "Čovjek s niskim kvocijentom inteligencije postigao je velike stvari u svom životu i bio je prisutan tijekom značajnih povijesnih događaja - u svakom slučaju, daleko iznad onoga što je itko zamislio da može učiniti. Ali unatoč svemu što je postigao, njegova jedina prava ljubav mu izmiče.",
+            "Budzet": 55000000,
+            "Prihod": 677387716,
+            "Redatelj_ime": "Robert",
+            "Redatelj_prezime": "Zemeckis",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "PG-13",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Mykelti",
+                "Prezime": "Williamson"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Sally",
+                "Prezime": "Field"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Gary",
+                "Prezime": "Sinise"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Robin",
+                "Prezime": "Wright"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Tom",
+                "Prezime": "Hanks"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Komedija"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Romantični"
+            }]
+        },
+        {
+            "Film_id": 5,
+            "Naziv": "Interstellar",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 84,
+            "Godina": 2014,
+            "Trajanje": 169,
+            "Kratki_opis": "Pustolovine skupine istraživača koji koriste novootkrivenu crvotočinu kako bi nadmašili ograničenja ljudskog svemirskog putovanja i osvojili goleme udaljenosti uključene u međuzvjezdano putovanje.",
+            "Budzet": 165000000,
+            "Prihod": 701729206,
+            "Redatelj_ime": "Christopher",
+            "Redatelj_prezime": "Nolan",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "PG-13",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Casey",
+                "Prezime": "Affleck"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Jessica",
+                "Prezime": "Chastain"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Michael",
+                "Prezime": "Caine"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Anne",
+                "Prezime": "Hathaway"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Matthew",
+                "Prezime": "McConaughey"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Avanturistički"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Znanstvena fantastika"
+            }]
+        },
+        {
+            "Film_id": 6,
+            "Naziv": "Kad jaganjci utihnu",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 83,
+            "Godina": 1991,
+            "Trajanje": 119,
+            "Kratki_opis": "Clarice Starling najbolja je studentica na FBI-evoj akademiji za obuku. Jack Crawford želi da Clarice intervjuira dr. Hannibala Lectera, briljantnog psihijatra koji je također i nasilni psihopat, koji služi doživotnu kaznu iza rešetaka zbog raznih djela ubojstava i kanibalizma. Crawford vjeruje da bi Lecter mogao imati uvid u slučaj i da bi Starlingova, kao privlačna mlada žena, mogla biti samo mamac da ga izvuče.",
+            "Budzet": 19000000,
+            "Prihod": 272742922,
+            "Redatelj_ime": "Jonathan",
+            "Redatelj_prezime": "Demme",
+            "Ime_distributera": "Orion Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Anthony",
+                "Prezime": "Heald"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ted",
+                "Prezime": "Levine"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Scott",
+                "Prezime": "Glenn"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Anthony",
+                "Prezime": "Hopkins"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Jodie",
+                "Prezime": "Foster"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Kriminalistički"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Horor"
+            }]
+        },
+        {
+            "Film_id": 7,
+            "Naziv": "Gladijator",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 82,
+            "Godina": 2000,
+            "Trajanje": 155,
+            "Kratki_opis": "Godine 180. smrt cara Marka Aurelija baca Rimsko Carstvo u kaos. Maximus je jedan od najsposobnijih i najpouzdanijih generala rimske vojske i ključni savjetnik cara. Dok se Marcusov podmukli sin Commodus penje na prijestolje, Maximus će biti pogubljen. Pobjegne, ali ga zarobe trgovci robljem. Preimenovan u Španjolca i prisiljen postati gladijator, Maximus se mora boriti do smrti s drugim ljudima kako bi zabavio publiku koja plaća.",
+            "Budzet": 103000000,
+            "Prihod": 465361176,
+            "Redatelj_ime": "William",
+            "Redatelj_prezime": "Nicholson",
+            "Ime_distributera": "DreamWorks Distribution",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Richard",
+                "Prezime": "Harris"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Oliver",
+                "Prezime": "Reed"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Connie",
+                "Prezime": "Nielsen"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Joaquin",
+                "Prezime": "Phoenix"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Russell",
+                "Prezime": "Crowe"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Avanturistički"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Akcijski"
+            }]
+        },
+        {
+            "Film_id": 8,
+            "Naziv": "Otok Shutter",
+            "Zemlja": "Sjedinjene Američke Države",
+            "Prosjecna_Ocjena": 82,
+            "Godina": 2010,
+            "Trajanje": 155,
+            "Kratki_opis": "Vojnik iz Drugog svjetskog rata koji je postao američki vojnik Maršal Teddy Daniels istražuje nestanak pacijenta iz bolnice za lude kriminalce, ali njegovi napori su kompromitirani uznemirujućim vizijama i tajanstvenim liječnikom.",
+            "Budzet": 80000000,
+            "Prihod": 294804195,
+            "Redatelj_ime": "Martin",
+            "Redatelj_prezime": "Scorsese",
+            "Ime_distributera": "Paramount Pictures",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Michelle",
+                "Prezime": "Williams"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Max",
+                "Prezime": "von Sydow"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Mark",
+                "Prezime": "Ruffalo"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Leonardo",
+                "Prezime": "DiCaprio"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Ben",
+                "Prezime": "Kingsley"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Misteri"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Triler"
+            }]
+        },
+        {
+            "Film_id": 9,
+            "Naziv": "Sedam samuraja",
+            "Zemlja": "Japan",
+            "Prosjecna_Ocjena": 85,
+            "Godina": 1954,
+            "Trajanje": 207,
+            "Kratki_opis": "Samuraj odgovara na zahtjev seljana za zaštitu nakon što ga zadese teška vremena. Grad treba zaštitu od razbojnika, pa samuraj okupi šestoricu da mu pomognu naučiti ljude kako se braniti, a seljani opskrbljuju vojnike hranom. \n",
+            "Budzet": 2000000,
+            "Prihod": 2626918,
+            "Redatelj_ime": "Akira",
+            "Redatelj_prezime": "Kurosawa",
+            "Ime_distributera": "Toho",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Minoru",
+                "Prezime": "Chiaki"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Seiji",
+                "Prezime": "Miyaguchi"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Yoshio",
+                "Prezime": "Inaba"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Takashi",
+                "Prezime": "Shimura"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Toshirō",
+                "Prezime": "Mifune"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Akcijski"
+            }]
+        },
+        {
+            "Film_id": 10,
+            "Naziv": "Podmornica",
+            "Zemlja": "Njemačka",
+            "Prosjecna_Ocjena": 81,
+            "Godina": 1981,
+            "Trajanje": 210,
+            "Kratki_opis": "Njemačka podmornica lovi savezničke brodove tijekom Drugog svjetskog rata, ali ubrzo postaje lovina. Posada pokušava preživjeti ispod površine, pritom rastežući i brod i sebe do krajnjih granica.\n",
+            "Budzet": 14000000,
+            "Prihod": 85000000,
+            "Redatelj_ime": "Wolfgang",
+            "Redatelj_prezime": "Petersen",
+            "Ime_distributera": "Neue Constantin Film",
+            "TVPG_ocjena": "R",
+            "Glumci": [{
+                "Glumac_id": 0,
+                "Ime": "Martin",
+                "Prezime": "Semmelrogge"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Hubertus",
+                "Prezime": "Bengsch"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Klaus",
+                "Prezime": "Wennemann"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Herbert",
+                "Prezime": "Grönemeyer"
+            },
+            {
+                "Glumac_id": 0,
+                "Ime": "Jürgen",
+                "Prezime": "Prochnow"
+            }],
+            "Zanrovi": [{
+                "Zanr_id": 0,
+                "Ime": "Drama"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Povijesni"
+            },
+            {
+                "Zanr_id": 0,
+                "Ime": "Ratni"
+            }]
+        }]
+    ]
+}
