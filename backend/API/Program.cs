@@ -1,9 +1,10 @@
-
+using AutoMapper;
 using API;
 using API.Repositories;
 using API.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,12 +35,28 @@ builder.Services.AddCors(options => {
 builder.Services.AddDbContext<MoviesDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DbConnectionString")));
 
+
+builder.Services.AddAutoMapper(typeof(Program));
+
+builder.Services.Configure<ApiBehaviorOptions>(options => {
+    options.SuppressModelStateInvalidFilter = true;
+});
+
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment()) {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
+
+app.MapGet("api/specification", () => {
+    var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "openapi.json");
+    var jsonContent = System.IO.File.ReadAllText(jsonPath);
+    return Results.Content(jsonContent, "application/json");
+});
+
 app.UseCors(cors);
 
 app.UseHttpsRedirection();
