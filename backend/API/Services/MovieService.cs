@@ -24,11 +24,16 @@ namespace API.Services {
             var movies = await GetMovies();
             return movies.Where(movie =>
                 movie.GetType().GetProperties()
-                    .Any(prop =>
-                        prop.GetValue(movie).ToString().ToLower().Contains(wildcard.ToLower())
-                    )
+                    .Any(prop => {
+                        var value = prop.GetValue(movie);
+                        if (value == null) return false; 
+                        return prop.PropertyType == typeof(string)
+                            ? value.ToString().ToLower().Contains(wildcard.ToLower()) 
+                            : value.ToString().Contains(wildcard); 
+                    })
             ).ToList();
         }
+
 
         public async Task<bool> AddMovie(PostMovieDTO film) {
             if (film is not PostMovieDTO) {

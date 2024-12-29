@@ -40,7 +40,7 @@ namespace API.Controllers {
                 }
                 var movies = await _movieService.GetFilteredMoviesByNaziv(naziv); 
                 if (movies.Count == 0 || movies == null) {
-                    return StatusCode(200, (ResponseWrapperMethods<MovieDTO>.ReturnSuccess200(null)));
+                    return StatusCode(404, (ResponseWrapperMethods<MovieDTO>.ReturnNotFound404()));
                 }
                 return Ok(ResponseWrapperMethods<List<MovieDTO>>.ReturnSuccess200(movies));
             } catch (Exception ex) {
@@ -52,7 +52,7 @@ namespace API.Controllers {
         [HttpGet("MoviesByZanr")]
         public async Task<ActionResult<IEnumerable<Filmovi>>> MoviesByZanr(string? zanr) {
             try {
-                if (string.IsNullOrWhiteSpace(zanr)) {
+                if (string.IsNullOrWhiteSpace(zanr) || zanr.GetType() != typeof(string)) {
                     return BadRequest(ResponseWrapperMethods<MovieDTO>.BadRequest400());
                 }
                 var movies = await _movieService.GetFilteredMoviesByZanr(zanr);
